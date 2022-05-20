@@ -6,11 +6,13 @@ const alertIcon = document.querySelector(".form__icon");
 function toggleAlert() {
     alertText.classList.add("visible");
     alertIcon.classList.add("visible");
+    input.classList.add("border-error");
 }
 
 function removeAlert() {
     alertText.classList.remove("visible");
     alertIcon.classList.remove("visible");
+    input.classList.remove("border-error");
 }
 
 function emptyInput() {

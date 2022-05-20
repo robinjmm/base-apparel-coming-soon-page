@@ -21,24 +21,28 @@
         <img class="logo" src="./images/logo.svg" alt="Base Apparel Logo">
     </div>
 
-    <picture class="hero">
-        <source media="(min-width: 1440px)" srcset="./images/hero-desktop.jpg">
-        <img class="hero__img" src="./images/hero-mobile.jpg" alt="A woman in a pink blouse">
-    </picture>
+    <div class="flex">
+        <picture class="hero">
+            <source media="(min-width: 1440px)" srcset="./images/hero-desktop.jpg">
+            <img class="hero__img" src="./images/hero-mobile.jpg" alt="A woman in a pink blouse">
+        </picture>
 
-    <main class="main container">
-        <h1 class="heading"><span class="heading__light">We're</span> coming soon</h1>
+        <main class="main container">
+            <div class="content">
+                <h1 class="heading"><span class="heading__light">We're</span> coming soon</h1>
 
-        <p>Hello fellow shoppers! We're currently building our new fashion store.
-            Add your email below to stay up-to-date with announcements and our launch deals.</p>
+                <p>Hello fellow shoppers! We're currently building our new fashion store.
+                    Add your email below to stay up-to-date with announcements and our launch deals.</p>
 
-        <form action="/" method="post" class="form">
-            <i class="form__icon"></i>
-            <input class="form__input" type="text" name="email" id="email" placeholder="Email Address">
-            <button class="button"></button>
-            <p class="form__alert">Please provide a valid email</p>
-        </form>
-    </main>
+                <form action="/" method="post" class="form">
+                    <i class="form__icon"></i>
+                    <input class="form__input" type="text" name="email" id="email" placeholder="Email Address">
+                    <button class="button"></button>
+                    <p class="form__alert">Please provide a valid email</p>
+                </form>
+            </div>
+        </main>
+    </div>
 
     <script src="./js/index.js"></script>
 </body>
