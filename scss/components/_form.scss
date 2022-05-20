@@ -1,0 +1,40 @@
+@use '../base/variables' as *;
+
+.form {
+    margin-top: rem(50px);
+    position: relative;
+
+    &__input {
+        width: 100%;
+        padding: 1em rem(20px);
+        border-radius: 2rem;
+        border: 1px solid var(--border-color);
+        color: var(--text-color);
+
+        &:focus,
+        &:active {
+            outline: 1px solid var(--border-color);
+        }
+
+        &::placeholder {
+            color: var(--text-color);
+        }
+    }
+
+    &::after {
+        content: url('../../images/icon-error.svg');
+        position: absolute;
+        top: 15%;
+        right: 25%;
+        visibility: hidden;
+    }
+
+    &__alert {
+        visibility: hidden;
+        text-align: left;
+        font-size: rem(14px);
+        margin-top: rem(8px);
+        margin-left: rem(20px);
+        color: var(--error-color);
+    }
+}

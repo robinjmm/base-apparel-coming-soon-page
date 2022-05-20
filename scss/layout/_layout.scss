@@ -1,0 +1,45 @@
+@use '../base/variables' as *;
+
+body {
+    background: linear-gradient(var(--gradient1));
+    font-size: 1rem;
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-normal);
+    color: var(--text-color);
+    padding: 5vh 0;
+    line-height: 1.7;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.main {
+    max-width: rem(350px);
+    text-align: center;
+}
+
+.hero {
+    margin-top: rem(30px);
+    margin-bottom: rem(50px);
+
+    &__img {
+        width: 100%;
+    }
+}
+
+.heading {
+    font-size: rem(40px);
+    color: var(--dark-accent-color);
+    font-weight: var(--fw-bold);
+    text-transform: uppercase;
+    line-height: 1.2;
+    letter-spacing: 10px;
+    margin-bottom: em(15px, 40px);
+
+    &__light {
+        font-weight: var(--fw-light);
+        color: var(--text-color);
+    }
+}
