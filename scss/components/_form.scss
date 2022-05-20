@@ -21,7 +21,7 @@
         }
     }
 
-    &::after {
+    &__icon {
         content: url('../../images/icon-error.svg');
         position: absolute;
         top: 15%;
